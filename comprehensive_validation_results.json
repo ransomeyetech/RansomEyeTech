@@ -1,0 +1,143 @@
+{
+  "timestamp": "2025-08-06T23:24:30.245093",
+  "phases": {
+    "phase1": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "file_install.sh": "PASS",
+        "file_uninstall.sh": "PASS",
+        "file_requirements.txt": "PASS",
+        "pkl_models": "PASS",
+        "pkl_count": 9,
+        "gguf_models": "PASS",
+        "gguf_count": 3,
+        "systemd_services": "PASS",
+        "service_count": 31
+      }
+    },
+    "phase2": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "linux_agent_syscall_monitor": "PASS",
+        "linux_agent_quarantine_logic": "PASS",
+        "linux_agent_boot_daemon": "PASS"
+      }
+    },
+    "phase3": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "windows_agent_file_monitoring": "PASS",
+        "windows_agent_process_monitoring": "PASS",
+        "windows_agent_hook_monitoring": "PASS"
+      }
+    },
+    "phase4": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "killchain_exists": "PASS",
+        "mitre_mapping": "PASS",
+        "correlation_exists": "PASS",
+        "forensic_exists": "PASS"
+      }
+    },
+    "phase5": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "llm_exists": "PASS",
+        "export_pdf": "PASS",
+        "export_html": "PASS",
+        "export_csv": "PASS"
+      }
+    },
+    "phase6": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "response_exists": "PASS",
+        "playbooks_exist": "PASS",
+        "playbook_count": 7
+      }
+    },
+    "phase7": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "alerts_exists": "PASS",
+        "policy_manager": "PASS"
+      }
+    },
+    "phase8": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "threat_intel_exists": "PASS",
+        "feed_misp": "PASS",
+        "feed_abuseipdb": "PASS",
+        "feed_talos": "PASS"
+      }
+    },
+    "phase9": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "deception_exists": "PASS",
+        "deception_honeytokens": "PASS",
+        "deception_fake_users": "PASS",
+        "deception_fake_files": "PASS",
+        "deception_fake_processes": "PASS"
+      }
+    },
+    "phase10": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "assistant_exists": "PASS",
+        "gguf_models": "PASS",
+        "gguf_count": 3
+      }
+    },
+    "phase11": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "ui_exists": "PASS",
+        "react_frontend": "PASS",
+        "dashboards": "PASS",
+        "dashboard_count": 9
+      }
+    },
+    "phase12": {
+      "status": "PASS",
+      "issues": [],
+      "checks": {
+        "orchestrator_loop": "PASS",
+        "bundler_engine": "PASS"
+      }
+    }
+  },
+  "compliance": {
+    "status": "FAIL",
+    "issues": [
+      "Found hardcoded patterns: ['10.0.']",
+      "1 files missing headers"
+    ],
+    "checks": {
+      "no_venv_dirs": "PASS",
+      "no_hardcoded_ips": "FAIL",
+      "file_headers": "FAIL"
+    }
+  },
+  "issues": [],
+  "summary": {
+    "total_phases": 12,
+    "passed_phases": 12,
+    "failed_phases": 0,
+    "compliance_status": "FAIL",
+    "overall_status": "FAIL"
+  }
+}

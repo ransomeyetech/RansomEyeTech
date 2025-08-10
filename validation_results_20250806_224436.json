@@ -1,0 +1,202 @@
+{
+  "Phase 1: Core Engine & Orchestrator": {
+    "phase": "Phase 1: Core Engine & Orchestrator",
+    "status": "FAIL",
+    "checks": [
+      "\u2717 main.py missing",
+      "\u2717 core/orchestrator.py missing",
+      "\u2717 core/master_orchestrator.py missing",
+      "\u2717 core/alert_orchestrator.py missing",
+      "\u2717 core/policy_manager.py missing",
+      "\u2717 ransomeye-core-engine.service missing",
+      "\u2717 ransomeye-forensic-engine.service missing",
+      "\u2717 ransomeye-llm-summarizer.service missing",
+      "\u2717 ransomeye-response-engine.service missing",
+      "\u2717 ransomeye-network-scanner.service missing",
+      "\u2717 killchain-refresh.timer missing",
+      "\u2717 response-trigger.timer missing",
+      "\u2717 network-scan.timer missing"
+    ],
+    "issues": [
+      "Missing file: main.py",
+      "Missing file: core/orchestrator.py",
+      "Missing file: core/master_orchestrator.py",
+      "Missing file: core/alert_orchestrator.py",
+      "Missing file: core/policy_manager.py",
+      "Missing service: ransomeye-core-engine.service",
+      "Missing service: ransomeye-forensic-engine.service",
+      "Missing service: ransomeye-llm-summarizer.service",
+      "Missing service: ransomeye-response-engine.service",
+      "Missing service: ransomeye-network-scanner.service",
+      "Missing timer: killchain-refresh.timer",
+      "Missing timer: response-trigger.timer",
+      "Missing timer: network-scan.timer"
+    ]
+  },
+  "Phase 2: AI Core & Model Registry": {
+    "phase": "Phase 2: AI Core & Model Registry",
+    "status": "FAIL",
+    "checks": [
+      "\u2717 ai_models/malware_classifier.pkl missing",
+      "\u2717 ai_models/malware_classifier_metadata.json missing",
+      "\u2717 ai_models/malware_classifier_shap.json missing",
+      "\u2717 ai_models/models/ransomware_detector_v2.pkl missing",
+      "\u2717 ai_models/models/win_behavior_model.pkl missing",
+      "\u2717 ai_models/models/metadata.json missing",
+      "\u2717 core/ai_model_server.py missing",
+      "\u2717 ai_models/validate_models.py missing"
+    ],
+    "issues": [
+      "Missing model file: ai_models/malware_classifier.pkl",
+      "Missing model file: ai_models/malware_classifier_metadata.json",
+      "Missing model file: ai_models/malware_classifier_shap.json",
+      "Missing model file: ai_models/models/ransomware_detector_v2.pkl",
+      "Missing model file: ai_models/models/win_behavior_model.pkl",
+      "Missing model file: ai_models/models/metadata.json",
+      "Missing AI server file: core/ai_model_server.py",
+      "Missing AI server file: ai_models/validate_models.py"
+    ]
+  },
+  "Phase 3: Alert Engine & Policy Manager": {
+    "phase": "Phase 3: Alert Engine & Policy Manager",
+    "status": "FAIL",
+    "checks": [
+      "\u2717 alerts/alert_engine.py missing",
+      "\u2717 alerts/alert_processor.py missing",
+      "\u2717 alerts/alert_router.py missing",
+      "\u2717 alerts/policy_manager.py missing",
+      "\u2717 Alert engine service missing"
+    ],
+    "issues": [
+      "Missing alert file: alerts/alert_engine.py",
+      "Missing alert file: alerts/alert_processor.py",
+      "Missing alert file: alerts/alert_router.py",
+      "Missing alert file: alerts/policy_manager.py",
+      "Missing alert engine service"
+    ]
+  },
+  "Phase 4: KillChain + Correlation + Forensics": {
+    "phase": "Phase 4: KillChain + Correlation + Forensics",
+    "status": "FAIL",
+    "checks": [
+      "\u2717 killchain/killchain_core.py missing",
+      "\u2717 killchain/killchain_mapper.py missing",
+      "\u2717 killchain/killchain_tracker.py missing",
+      "\u2717 killchain/timeline_exporter.py missing",
+      "\u2717 correlation/threat_correlation_engine.py missing",
+      "\u2717 correlation/threat_correlation.py missing",
+      "\u2717 correlation/ioc_matcher.py missing",
+      "\u2717 forensic/forensic_dump_engine.py missing",
+      "\u2717 forensic/forensic_dump.py missing",
+      "\u2717 forensic/dump_orchestrator.py missing"
+    ],
+    "issues": [
+      "Missing killchain file: killchain/killchain_core.py",
+      "Missing killchain file: killchain/killchain_mapper.py",
+      "Missing killchain file: killchain/killchain_tracker.py",
+      "Missing killchain file: killchain/timeline_exporter.py",
+      "Missing correlation file: correlation/threat_correlation_engine.py",
+      "Missing correlation file: correlation/threat_correlation.py",
+      "Missing correlation file: correlation/ioc_matcher.py",
+      "Missing forensic file: forensic/forensic_dump_engine.py",
+      "Missing forensic file: forensic/forensic_dump.py",
+      "Missing forensic file: forensic/dump_orchestrator.py"
+    ]
+  },
+  "Phase 5: LLM Summarizer Engine": {
+    "phase": "Phase 5: LLM Summarizer Engine",
+    "status": "FAIL",
+    "checks": [
+      "\u2717 llm/summarizer.py missing",
+      "\u2717 LLM summarizer service missing"
+    ],
+    "issues": [
+      "Missing LLM file: llm/summarizer.py",
+      "Missing LLM summarizer service"
+    ]
+  },
+  "Phase 6: Incident Response Engine": {
+    "phase": "Phase 6: Incident Response Engine",
+    "status": "FAIL",
+    "checks": [
+      "\u2717 response/incident_response.py missing",
+      "\u2717 response/incident_response.py missing",
+      "\u2717 Response engine service missing"
+    ],
+    "issues": [
+      "Missing response file: response/incident_response.py",
+      "Missing response file: response/incident_response.py",
+      "Missing response engine service"
+    ]
+  },
+  "Phase 7: Assistant Copilot": {
+    "phase": "Phase 7: Assistant Copilot",
+    "status": "FAIL",
+    "checks": [
+      "\u2717 assistant/soc_assistant.py missing",
+      "\u2717 Assistant service missing"
+    ],
+    "issues": [
+      "Missing assistant file: assistant/soc_assistant.py",
+      "Missing assistant service"
+    ]
+  },
+  "Phase 8: Threat Intelligence Feed Engine": {
+    "phase": "Phase 8: Threat Intelligence Feed Engine",
+    "status": "FAIL",
+    "checks": [
+      "\u2717 threat_intel/threat_intel_engine.py missing",
+      "\u2717 threat_intel/feeds/misp.json missing",
+      "\u2717 threat_intel/feeds/abuseipdb.json missing",
+      "\u2717 threat_intel/feeds/talos.csv missing",
+      "\u2717 Threat intel service missing"
+    ],
+    "issues": [
+      "Missing threat intel file: threat_intel/threat_intel_engine.py",
+      "Missing threat intel file: threat_intel/feeds/misp.json",
+      "Missing threat intel file: threat_intel/feeds/abuseipdb.json",
+      "Missing threat intel file: threat_intel/feeds/talos.csv",
+      "Missing threat intel service"
+    ]
+  },
+  "Phase 9: Network Scanner (Active+Passive)": {
+    "phase": "Phase 9: Network Scanner (Active+Passive)",
+    "status": "FAIL",
+    "checks": [
+      "\u2717 net_scanner/network_scanner.py missing",
+      "\u2717 net_scanner/README.md missing",
+      "\u2717 net_scanner/demo_network_scan_results.json missing",
+      "\u2717 Network scanner service missing"
+    ],
+    "issues": [
+      "Missing scanner file: net_scanner/network_scanner.py",
+      "Missing scanner file: net_scanner/README.md",
+      "Missing scanner file: net_scanner/demo_network_scan_results.json",
+      "Missing network scanner service"
+    ]
+  },
+  "Global Requirements": {
+    "phase": "Global Requirements",
+    "status": "FAIL",
+    "checks": [
+      "\u2717 dashboards/killchain_timeline.json missing",
+      "\u2717 dashboards/llm_summaries.json missing",
+      "\u2717 dashboards/forensic_dumps.json missing",
+      "\u2717 dashboards/ioc_threat_feed_summary.json missing",
+      "\u2717 dashboards/response_action_matrix.json missing",
+      "\u2717 dashboards/ai_core_model_status.json missing",
+      "\u2717 dashboards/network_risk_score_matrix.json missing",
+      "\u2717 dashboards/assistant_interaction_timeline.json missing"
+    ],
+    "issues": [
+      "Missing dashboard: dashboards/killchain_timeline.json",
+      "Missing dashboard: dashboards/llm_summaries.json",
+      "Missing dashboard: dashboards/forensic_dumps.json",
+      "Missing dashboard: dashboards/ioc_threat_feed_summary.json",
+      "Missing dashboard: dashboards/response_action_matrix.json",
+      "Missing dashboard: dashboards/ai_core_model_status.json",
+      "Missing dashboard: dashboards/network_risk_score_matrix.json",
+      "Missing dashboard: dashboards/assistant_interaction_timeline.json"
+    ]
+  }
+}
